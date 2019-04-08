@@ -1,0 +1,13 @@
+<view class="container">
+  <template is="head" data="{{title: 'button'}}" />
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+
+      <button type="primary" bindtap="chooseImage">文字识别</button>
+    </view>
+
+  </view>
+
+  <template is="foot" />
+</view>

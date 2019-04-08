@@ -1,0 +1,4 @@
+<view>
+<view>识别结果：</view>
+        <textarea bindblur="bindTextAreaBlur" value="{{ocrResult}}" auto-height style='border:2rpx solid red'/>
+</view>
