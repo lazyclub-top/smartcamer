@@ -4,6 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    img:'',
     ocrResult:""
   },
 
@@ -12,8 +13,19 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      ocrResult:options.ocrResult
+      ocrResult:options.ocrResult,
+      img:options.img
     })
+  },
+  copayData:function(){
+
+    wx.setClipboardData({
+      data: this.data.ocrResult,
+      success(res) {
+        wx.hideToast(); //隐藏复制成功的弹窗提示,根据需求可选
+      }
+    })
+
   },
 
   /**

@@ -1,13 +1,42 @@
 {
   "pages": [
-    "pages/index/index",
+        "pages/index/index",
+        
+        "pages/ocrpage/ocrpage",
+        
     "pages/logs/logs",
-    "pages/ocrpage/ocrpage"
+            "pages/tranpage/tranpage"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "懒人智译",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#1BA0E1",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/ocr.png",
+        "selectedIconPath": "images/ocr_hl.png",
+        "text": "文字识别"
+      },
+      {
+        "pagePath": "pages/tranpage/tranpage",
+        "iconPath": "images/yi.png",
+        "selectedIconPath": "images/yi_hl.png",
+        "text": "翻译"
+      },
+      {
+        "pagePath": "pages/tranpage/tranpage",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-active.png",
+        "text": "我的"
+      }
+    ]
   }
 }

@@ -19,3 +19,8 @@
 .usermotto {
   margin-top: 200px;
 }
+.page__title {
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
