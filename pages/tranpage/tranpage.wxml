@@ -1,18 +1,26 @@
-<view class="page-section page-section-gap">
-  <view class="page-section-title">图片</view>
-  <view class="page-section-ctn">
-    <image class="image" src="{{imgPath}}" />
+<view class="container">
+  <view class="title">
+    <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array}}">
+      <span class="weui-input title-r">{{array[index1]}}</span>
+    </picker>
+    <image src="/images/arrow-r.png" mode='aspectFit' />
+    <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array}}">
+      <span class="weui-input">{{array[index2]}}</span>
+    </picker>
   </view>
-</view>
-<view class="page-section page-section-gap">
-  <view class="page-section-title">文字</view>
-  <view class="page-section-ctn">
-    <input value='{{sourceTxt}}'/>
+  <view class="img_wrap">
+    <image src="{{ img }}" mode='aspectFit' />
   </view>
-</view>
-<view class="page-section page-section-gap">
-  <view class="page-section-title">译文</view>
-  <view class="page-section-ctn">
-    <input value='{{tranTxt}}'/>
-  </view>
+  <button class="mini-btn right" type="primary" size="mini" bindtap='chooseImage'>选择图片</button>
+
+  <view>原文：</view>
+  <textarea placeholder="请输入" auto-focus class='edittxt'  bindinput='setSourceTxt' value='{{sourceTxt}}' />
+  <view>译文：</view>
+    <button class="mini-btn right" type="primary" size="mini" bindtap='tranTxt'>翻译</button>
+
+
+  <textarea bindblur="bindTextAreaBlur" value="{{ocrResult}}" disabled='true' auto-height class='ocrResutl' value='{{tranTxt}}' />
+  <button type="primary" plain="true" bindtap='copayData' class='copyBtn'>复制</button>
+
+
 </view>

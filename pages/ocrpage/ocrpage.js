@@ -12,68 +12,64 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      ocrResult:options.ocrResult,
-      img:options.img
-    })
+    console.log(getApp().globalData.url+'/ocr/ocrbase.do')
+    if (options && options.loadimg == 1) {
+      this.chooseImage()
+    }
   },
-  copayData:function(){
 
+  onShow: function () {
+    if (this.data.img) {
+      this.readimg(this.data.img)
+    }
+  },  copayData:function(){
     wx.setClipboardData({
       data: this.data.ocrResult,
       success(res) {
-        wx.hideToast(); //隐藏复制成功的弹窗提示,根据需求可选
+        wx.showToast({
+          title: '已复制',
+          icon: 'success',
+          duration: 2000
+        })
       }
+    })
+  },
+  chooseImage: function () {
+    wx.navigateTo({
+      url: '/pages/cropper/cropper?oper=ocr_base',
+    })
+  },
+  imgCallBack(oper, filePath) {
+    this.setData({
+      img: filePath,
     })
 
   },
+  readimg(filePath) {
+    var that = this
+    that.setData({
+      ocrResult: ''
+    })
+    wx.showLoading({
+      title: '识别中',
+    })
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
+    wx.uploadFile({
+      url: getApp().globalData.url+'/ocr/ocrbase.do',
+      filePath: filePath,
+      name: 'file',
+      success: function (res) {
+        if (res.statusCode == 200 && JSON.parse(res.data).data) {
+          var data = JSON.parse(res.data).data;
+          that.setData({
+            ocrResult: data
+          })
+        }
+       
+      },
+      complete: function () {
+        wx.hideLoading();
+      }
+    })
   }
 })

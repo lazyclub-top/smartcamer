@@ -86,3 +86,123 @@ page{
 .green{
   color:green;
 }
+.image {
+  width: 100%;
+  height: 360rpx;
+}
+.container {
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom;
+  background-position-x: right;
+}
+
+button {
+  font-family: 微软雅黑;
+}
+
+
+.page-body-info {
+  display: flex;
+  box-sizing: border-box;
+  padding: 30rpx;
+  height: 420rpx;
+  border-top: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+  align-items: center;
+  justify-content: center;
+}
+.right{
+  float: right;
+  margin-top: -70rpx;
+}
+.user-motto {
+  font-family: 微软雅黑;
+}
+
+.user-names {
+  font-family: 微软雅黑;
+  color: rgb(0, 197, 198);
+}
+.user-calories{
+ font-family: 微软雅黑;
+ color: rgb(0, 197, 198);
+}
+.user-probabilitys{
+ font-family: 微软雅黑;
+ color: rgb(0, 197, 198);
+}
+.user-remark {
+  font-family: 微软雅黑;
+  margin-top: 65px;
+}
+.dish{
+  float: left;
+  font-family: 微软雅黑;
+}
+.img_wrap {
+    margin-bottom: 10rpx;
+    width: 750rpx;
+    height: 468rpx;
+    background: #ececec;
+    border-bottom: 1rpx rgb(196, 197, 194) solid;
+}
+
+image {
+    width: 100%;
+    height: 100%;
+    max-height: 1
+}
+.msg {
+    margin: 10px 0;
+    text-align: center;
+}
+.copyBtn{
+  width:90%;
+  margin-bottom: 10rpx;
+}
+.ocrResutl{
+  margin:10rpx auto;
+  padding:10rpx;
+  text-align: center;
+  width:700rpx;
+  box-shadow:0rpx 2rpx 5rpx 5rpx rgb(196, 197, 194);
+  min-height: 300rpx;
+}
+.res_title{
+  font-weight:bold;
+  font-size: 18px;
+}
+.res_content{
+  font-size: 14px;
+}
+.divLine{
+ background: rgb(196, 197, 194);
+ width: 100%;
+ height: 1rpx;
+}
+.edittxt{
+  background-color: white;
+  min-height: 200rpx;
+  width:100%;
+  padding:10rpx;
+  margin-bottom: 10rpx;
+}
+.navigator-arrow {
+  padding-right: 26rpx;
+  position: relative;
+}
+.navigator-arrow:after {
+  content: " ";
+  display: inline-block;
+  height: 18rpx;
+  width: 18rpx;
+  border-width: 2rpx 2rpx 0 0;
+  border-color: #888888;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -8rpx;
+  right: 28rpx;
+}

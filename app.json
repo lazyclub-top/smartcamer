@@ -1,17 +1,26 @@
 {
   "pages": [
-        "pages/index/index",
-        
-        "pages/ocrpage/ocrpage",
-        
+    "pages/index/index",
+    "pages/tranpage/tranpage",
+    "pages/ocrpage/ocrpage",
     "pages/logs/logs",
-            "pages/tranpage/tranpage"
+    "pages/animal/animal",
+    "pages/mine/mine",
+    "pages/cropper/cropper",
+    "pages/advanced/advanced",
+    "pages/car/car",
+    "pages/id/id",
+    "pages/plan/plan"         
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "懒人智译",
     "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 6000,
+    "uploadFile": 100000
   },
   "tabBar": {
     "color": "#7A7E83",
@@ -21,22 +30,17 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/ocr.png",
-        "selectedIconPath": "images/ocr_hl.png",
-        "text": "文字识别"
+        "iconPath": "images/st.png",
+        "selectedIconPath": "images/st_hl.png",
+        "text": "识图"
       },
       {
         "pagePath": "pages/tranpage/tranpage",
         "iconPath": "images/yi.png",
         "selectedIconPath": "images/yi_hl.png",
         "text": "翻译"
-      },
-      {
-        "pagePath": "pages/tranpage/tranpage",
-        "iconPath": "images/my.png",
-        "selectedIconPath": "images/my-active.png",
-        "text": "我的"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

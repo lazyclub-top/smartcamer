@@ -4,11 +4,13 @@
   <view class="img_wrap">
     <image src="{{ img }}" mode='aspectFit' />
   </view>
-          <button class="mini-btn right" type="primary" size="mini">选择图片</button>
+  <button class="mini-btn right" type="primary" size="mini" bindtap='chooseImage'>选择图片</button>
 
     
     <view>识别结果：</view>
-    <textarea bindblur="bindTextAreaBlur" value="{{ocrResult}}" auto-height class='ocrResutl'  />
+    <view class='resultView'>
+        <textarea bindblur="bindTextAreaBlur" value="{{ocrResult}}" auto-height class='ocrResutl'/>
+    </view>
     <button type="primary" plain="true" bindtap='copayData' class='copyBtn'>复制</button>
 
 
