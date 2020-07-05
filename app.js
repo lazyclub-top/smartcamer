@@ -23,6 +23,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    url:"https://lazyclub.work/smartcamer"
+    url:""
   }
 })
