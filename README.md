@@ -7,25 +7,25 @@
 
 首页
 <div>
-<img width="150" height="150" src="http://lazyclub.top/smartcamer/readme/index.jpg"/>
+<img width="150" height="250" src="http://lazyclub.top/smartcamer/readme/index.jpg"/>
 </div>
 <br>
 
 文字识别
 <div>
-<img width="150" height="150" src="http://lazyclub.top/smartcamer/readme/ocr.jpg"/>
+<img width="150" height="250" src="http://lazyclub.top/smartcamer/readme/ocr.jpg"/>
 </div>
 <br>
 
 通用物品识别
 <div>
-<img width="150" height="150" src="http://lazyclub.top/smartcamer/readme/advance.jpg"/>
+<img width="150" height="250" src="http://lazyclub.top/smartcamer/readme/advance.jpg"/>
 </div>
 <br>
 
 翻译
 <div>
-<img width="150" height="150" src="http://lazyclub.top/smartcamer/readme/tran.jpg"/>
+<img width="150" height="250" src="http://lazyclub.top/smartcamer/readme/tran.jpg"/>
 </div>
 <br>
 
