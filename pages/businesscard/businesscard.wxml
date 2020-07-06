@@ -1,0 +1,21 @@
+
+
+<view class="container">
+  <view class="img_wrap">
+    <image src="{{ img }}" mode='aspectFit' />
+  </view>
+  <button class="mini-btn right" type="primary" size="mini" bindtap='chooseImage'>选择图片</button>
+
+    
+    <view>识别结果：</view>
+    <view class='ocrResutl'>
+    <view class='res_title'>姓名：{{name}}</view>
+    <view class='res_title'>手机号：{{mobile}}</view>
+    <view class='res_title'>电话：{{tel}}</view>
+    <view class='res_title'>地址：{{address}}</view>
+
+  </view>
+    <button type="primary" plain="true" bindtap='copayData' class='copyBtn'>复制</button>
+
+
+</view>
