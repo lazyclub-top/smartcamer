@@ -6,31 +6,28 @@
 - - -
 
 首页
-<div align=center>
-<img style="margin:0px auto" width="150" src="http://lazyclub.top/smartcamer/readme/index.jpg"/>
-</div>
 <br>
+![avatar](images/readme/index.jpg) 
 
+<br>
 文字识别
-<div align=center>
-<img width="150"  src="http://lazyclub.top/smartcamer/readme/ocr.jpg"/>
-</div>
+
+![avatar](images/readme/ocr.jpg) 
+
 <br>
 
 通用物品识别
-<div align=center>
-<img width="150" src="http://lazyclub.top/smartcamer/readme/advance.jpg"/>
-</div>
+
+![avatar](images/readme/advance.jpg) 
 <br>
 
 翻译
-<div align=center>
-<img width="150" src="http://lazyclub.top/smartcamer/readme/tran.jpg"/>
-</div>
+
+![avatar](images/readme/tran.jpg) 
+
 <br>
 
 - - -
 可以扫描二维码查看效果
-<div align=center>
-<img width="150" src="http://lazyclub.top/smartcamer/readme/qr.jpg"/>
-</div>
+
+![avatar](images/readme/qr.jpg) 
